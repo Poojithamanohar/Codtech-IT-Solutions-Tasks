@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a8e71d5047.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@500&family=Lato:ital@1&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>P</span>oojitha.</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>              <!-----Creating a navbar---->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Aspiring Engineer</p>
+                <h1>Hi, I'm <span>Poojitha</span> Reganti</h1>
+                <div class="tag">I'm a engineer with fresh perspective, boundless enthusiasm.</div>
+            </div>
+        </div>
+    </div>
+<!----------------------About Page-------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Backgroundimage - Copy.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a computer science undergraduate with a strong background in programming, data structures, and algorithms. Proficient in Web-technologies(Front-end: HTML, CSS, Javascript, Back-end & Database: Php, MSQL, Frameworks: Brootstramp and React.js ), C, and Python,<br>with knowledge in software development and testing. Seeking a challenging position in a reputable company to apply my skills and knowledge, and to grow professionally.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br>Desinging Web interfaces</li>
+                            <li><span>Software Development</span><br> Designing, creating, testing, and maintaining different software applications. </li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Webpages: Hap Management System</span><br>Hap Management System is event booking website where user has the facility to reserve an event in their respective localities. This website was developed using HTML, CSS, JAVASCRIPT and the backend with PHP and MYSQL. Frameworks used are BOOTSTRAP and REACT JS. It was during this project I discovered that i am a quick learner and can deliver the tasks on-time.</li>
+                            <li><span>PGLife Website</span><br>Accomplished a PGLife website successfully. It is a user-friendly website which is used to reserve a room in respective user pick out PG. The technologies used are HTML, CSS, JAVASCRIPT, PHP, MYSQL.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>Saveetha Engineering College<br>Bachelor of Engineering, Computer Science and Engineering<br>CGPA: 9.1</li>
+                            <li><span>2018 - 2020</span><br>Narayana Junior College<br>Intermediate(XII)<br>Marks: 958/1000</li>
+                            <li><span>2018</span><br>Narayana Group of Institutions<br>Secondary(X)<br>Grade: 10/10</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------services---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Internships</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Selected for the web development internship position with CODTECH IT SOLUTIONS. The duration of the internship is of 4 weeks.<br>Commenced on: 15th February<br>Comes to end-on: 15th March.<br>I am grateful for the trust and confidence that Codtech IT Solutions has placed in me, and I am excited to contribute my best to the team. During these four weeks, my primary focus will be on learning, growing, and gaining hands-on experience in the dynamic field of web development.</p>
+                    <a href="#">Know more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>Accomplished a full-stack project title called PGLife. This internship is done with INTERNSHALA and the duration period is of 12 weeks. During this internship I acquired knowledge about BOOTSTRAP, REACT.JS and gained confidence on designing a complete responsive website.</p>
+                    <a href="#">Know more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Freelancing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, reiciendis quae id tempore ut doloremque necessitatibus, officia minima<br>porro reprehenderit voluptas hic fugit repellendus odit dicta omnis nulla debitis esse.</p>
+                    <a href="#">Know more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------PORTFOLIO------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>The portfolio is a important thing to showcase your work and capabilities, and I designed a simple single page portfolio website of mine with the technologies I learnt.<br></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Designs using HTML, CSS</h3>
+                        <p>Appealing designs gives a break to eyes. Creating those ravishing designs is my passion. Here you can check-out few of the effects I created using CSS.<br></p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Ecommerce Website </h3>
+                        <p>Easy to navigate with clear categories, intuitive search bar, and high-quality product images. Detailed descriptions, specifications, and high-resolution photos with zoom options. Optimized for various screen sizes and touch input for comfortable browsing and purchasing on the go.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------CONTACT---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>regantipoojitha@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7989191389</p>
+                    <div class="social-icons">
+                        <a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Poojithamanohar" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/poojitha-reddy-703505201/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/poojithareganti/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Reganti_Poojitha_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="8" cols="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Poojitha. Made with ❤️ by Reganti Poojitha</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById(sidemenu);
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+  
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxDpug2f5SoLFj05XPhGrDdFAx-3Y2eT5Ju_Tfp9IYSaYpbmAkskABkte0AkPQnnmpa/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.rest()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
